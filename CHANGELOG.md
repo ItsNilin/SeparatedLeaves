@@ -1,5 +1,9 @@
 # Separated Leaves Changelog
 
+## 2.4.0
+- Added support for Create: Garnished ([DakotaPride](https://github.com/DakotaPride))
+- Removed an error because of Quark's cherry leaves not being present in 1.20 ([VoidLeech](https://github.com/VoidLeech)) 
+
 ## 2.3.0
 - Added structure and biome tags to be able to configure where mismatched leaves are allowed (thanks [TelepathicGrunt](https://github.com/TelepathicGrunt))
 
