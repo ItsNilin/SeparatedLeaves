@@ -1,0 +1,4 @@
+{
+  "leaves": ["affinity:budding_azalea_leaves", "affinity:unflowering_azalea_leaves", "minecraft:azalea_leaves", "minecraft:flowering_azalea_leaves"],
+  "logs": ["#affinity:azalea_logs"]
+}
