@@ -1,4 +1,4 @@
 {
-  "leaves": ["oak_leaves", "biomesoplenty:flowering_oak_leaves"],
-  "logs": ["#oak_logs"]
+  "leaves": ["minecraft:oak_leaves", "biomesoplenty:flowering_oak_leaves"],
+  "logs": ["#minecraft:oak_logs"]
 }
