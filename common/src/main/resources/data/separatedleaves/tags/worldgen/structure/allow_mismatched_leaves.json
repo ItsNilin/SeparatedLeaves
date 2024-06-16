@@ -8,6 +8,10 @@
     {
       "id": "the_bumblezone:hanging_garden",
       "required": false
+    },
+    {
+      "id": "#bettermineshafts:better_mineshafts",
+      "required": false
     }
   ]
 }

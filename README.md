@@ -22,20 +22,45 @@ This means that you can add compatibility for any mod yourself, through data pac
 Want to learn how? Take a look at the [Docs](https://docs.teamdiopside.nl/separated-leaves/).
 
 ### It has built-in compatibility with:
+- Affinity
+- Arts & Crafts
 - Atmospheric
+- Aurora's Decorations
 - Autumnity
+- Azalea Wood Set
+- Beachparty
+- Beetlebox
+- BetterEnd
+- BetterNether
+- Bewitchment
 - Biomes o' Plenty
+- Blockus
+- BloomingNature
+- Create: Garnished
+- CulturalDelights
 - Ecologics
 - Environmental
+- Heart of the Machine
 - Hex Casting
+- Hibernal Herbs
 - Malum
+- Meadow
+- Nature's Spirit
+- NEEPMeat
 - Oh The Biomes You'll Go
 - Premium Wood
 - Quark
 - Reqions Unexplored
+- SwitchCraft Goodies
+- Terralith
+- Terrestria
 - The Twilight Forest
+- Tinker's Construct / Hephaestus
+- Traverse
 - Upgrade Aquatic
+- Vinery
 - Windswept
+- Yttr
 
 ---
 

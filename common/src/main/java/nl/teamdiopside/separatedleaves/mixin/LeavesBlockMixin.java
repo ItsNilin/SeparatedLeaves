@@ -2,6 +2,8 @@ package nl.teamdiopside.separatedleaves.mixin;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.StructureManager;
@@ -35,7 +37,8 @@ public abstract class LeavesBlockMixin {
         }
 
         // Same for biomes
-        if (levelAccessor.getBiome(blockPos).is(SeparatedLeaves.ALLOW_MISMATCHED_LEAVES_BIOMES)) {
+        ResourceLocation biome = levelAccessor.registryAccess().registryOrThrow(Registries.BIOME).getKey(levelAccessor.getBiome(blockPos).value());
+        if (!Reload.BIOME_NAMESPACES.contains(biome.getNamespace()) && !Reload.BIOMES.contains(biome.toString())) {
             return;
         }
 

@@ -13,7 +13,6 @@ public class SeparatedLeaves {
     public static final String MOD_ID = "separatedleaves";
     public static final Logger LOGGER = LoggerFactory.getLogger("Separated Leaves");
     public static final TagKey<Structure> ALLOW_MISMATCHED_LEAVES_STRUCTURES = TagKey.create(Registries.STRUCTURE, new ResourceLocation(MOD_ID, "allow_mismatched_leaves"));
-    public static final TagKey<Biome> ALLOW_MISMATCHED_LEAVES_BIOMES = TagKey.create(Registries.BIOME, new ResourceLocation(MOD_ID, "allow_mismatched_leaves"));
 
     public static MinecraftServer minecraftServer = null;
     
