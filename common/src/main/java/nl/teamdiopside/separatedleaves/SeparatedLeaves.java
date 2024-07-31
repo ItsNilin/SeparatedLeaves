@@ -16,5 +16,6 @@ public class SeparatedLeaves {
     public static MinecraftServer minecraftServer = null;
     
     public static void init() {
+        LOGGER.debug("unilock is the real MVP");
     }
 }

@@ -36,9 +36,12 @@ Want to learn how? Take a look at the [Docs](https://docs.teamdiopside.nl/separa
 - Biomes o' Plenty
 - Blockus
 - BloomingNature
+- Bountiful Fares
 - Create: Garnished
 - CulturalDelights
+- Dimensional Doors
 - Ecologics
+- Enchanted: Witchcraft
 - Environmental
 - Heart of the Machine
 - Hex Casting
@@ -61,6 +64,8 @@ Want to learn how? Take a look at the [Docs](https://docs.teamdiopside.nl/separa
 - Vinery
 - Windswept
 - Yttr
+
+The majority of compat was made by [unilock](https://github.com/unilock)!
 
 ---
 
