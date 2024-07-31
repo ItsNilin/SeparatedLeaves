@@ -135,5 +135,5 @@ shadowJar {
 
 remapJar {
     input.set shadowJar.archiveFile
-    archiveClassifier = "forge-${rootProject.latest_version}"
+    archiveClassifier = "neoforge-${rootProject.latest_version}"
 }
