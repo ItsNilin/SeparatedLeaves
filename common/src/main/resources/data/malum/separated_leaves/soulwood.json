@@ -1,4 +1,4 @@
 {
-  "leaves": ["malum:soulwood_leaves"],
+  "leaves": ["malum:soulwood_leaves","malum:budding_soulwood_leaves"],
   "logs": ["#malum:soulwood_logs"]
 }
