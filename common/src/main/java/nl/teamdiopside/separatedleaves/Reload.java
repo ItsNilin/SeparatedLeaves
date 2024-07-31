@@ -3,26 +3,17 @@ package nl.teamdiopside.separatedleaves;
 import com.google.common.collect.Maps;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
-import com.google.gson.JsonParseException;
 import dev.architectury.platform.Platform;
 import net.minecraft.core.Holder;
-import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.server.packs.resources.Resource;
 import net.minecraft.server.packs.resources.ResourceManager;
 import net.minecraft.server.packs.resources.SimpleJsonResourceReloadListener;
 import net.minecraft.tags.TagKey;
-import net.minecraft.util.GsonHelper;
-import net.minecraft.world.level.biome.Biome;
-import net.minecraft.world.level.biome.BiomeManager;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.Reader;
 import java.util.*;
 
 public class Reload {
@@ -91,12 +82,12 @@ public class Reload {
         Set<Block> blocks = new HashSet<>();
         for (JsonElement jsonElement : json.getAsJsonObject().get(string).getAsJsonArray()) {
             if (jsonElement.getAsString().startsWith("#")) {
-                TagKey<Block> blockTagKey = TagKey.create(Registries.BLOCK, new ResourceLocation(jsonElement.getAsString().replace("#", "")));
+                TagKey<Block> blockTagKey = TagKey.create(Registries.BLOCK, ResourceLocation.parse(jsonElement.getAsString().replace("#", "")));
                 for (Holder<Block> blockHolder : BuiltInRegistries.BLOCK.getOrCreateTag(blockTagKey)) {
                     blocks.add(blockHolder.value());
                 }
             } else {
-                Block block = BuiltInRegistries.BLOCK.get(new ResourceLocation(jsonElement.getAsString()));
+                Block block = BuiltInRegistries.BLOCK.get(ResourceLocation.parse(jsonElement.getAsString()));
                 if (block == Blocks.AIR && !jsonElement.getAsString().replace("minecraft:", "").equals("air")) {
                     SeparatedLeaves.LOGGER.error("Block \"{}\" from {} does not exist!", jsonElement.getAsString(), key);
                 } else {

@@ -1,5 +1,5 @@
 modLoader = "javafml"
-loaderVersion = "[40,)"
+loaderVersion = "[4,)"
 #issueTrackerURL = ""
 license = "All Rights Reserved"
 
@@ -13,23 +13,29 @@ This mod makes leaves only connect to their own log type
 '''
 logoFile = "icon.png"
 
-[[dependencies.separatedleaves]]
-modId = "forge"
-mandatory = true
-versionRange = "[40,)"
+[[dependencies.example_mod]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.0,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.separatedleaves]]
+[[dependencies.example_mod]]
 modId = "minecraft"
-mandatory = true
-versionRange = "[1.19.3,)"
+type = "required"
+versionRange = "[1.21,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.separatedleaves]]
+[[dependencies.example_mod]]
 modId = "architectury"
-mandatory = true
-versionRange = "[7.1.86,)"
+type = "required"
+versionRange = "[13.0.2,)"
 ordering = "AFTER"
 side = "BOTH"
+
+[[mixins]]
+config = "separatedleaves-common.mixins.json"
+
+[[mixins]]
+config = "separatedleaves.mixins.json"
