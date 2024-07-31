@@ -1,8 +1,8 @@
 # Separated Leaves Changelog
 
 ## 2.5.0
-- Updated to 1.20.6 and 1.21
-- The mod is now disabled in unspecified modded biomes by default. This is to make sure no leaves get destroyed in biome mods without support yet.
+- Updated to 1.21
+- The mod is now disabled in unknown modded biomes by default. This is to make sure no leaves get destroyed in biome mods without current support.
 - Removed the `allow_mismatched_leaves` biome tag.
 - Every namespace now needs a `biomes.json` file to enable the mod in their biomes.
   - For more info, see the [documentation](https://docs.teamdiopside.nl/separated-leaves/biomes-and-structures)!
