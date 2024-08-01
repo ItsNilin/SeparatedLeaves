@@ -4,9 +4,9 @@
 
 ---
 
-[![architectury-api](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/requires/architectury-api_vector.svg)](https://modrinth.com/mod/architectury-api)
-[![Fabric API](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/requires/fabric-api_vector.svg)](https://modrinth.com/mod/fabric-api)
-[![Forge](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/supported/forge_vector.svg)](https://files.minecraftforge.net/net/minecraftforge/forge/)
+[![architectury-api](https://badges.penpow.dev/badges/requires/architectury-api/cozy.svg)](https://modrinth.com/mod/architectury-api)
+[![Fabric API](https://badges.penpow.dev/badges/requires/fabric-api/cozy.svg)](https://modrinth.com/mod/fabric-api)
+[![Forge](https://badges.penpow.dev/badges/supported/forge/cozy.svg)](https://files.minecraftforge.net/net/minecraftforge/forge/)
 
 ---
 
