@@ -13,21 +13,21 @@ This mod makes leaves only connect to their own log type
 '''
 logoFile = "icon.png"
 
-[[dependencies.example_mod]]
+[[dependencies.separatedleaves]]
 modId = "neoforge"
 type = "required"
 versionRange = "[21.0,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.example_mod]]
+[[dependencies.separatedleaves]]
 modId = "minecraft"
 type = "required"
 versionRange = "[1.21,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.example_mod]]
+[[dependencies.separatedleaves]]
 modId = "architectury"
 type = "required"
 versionRange = "[13.0.2,)"
