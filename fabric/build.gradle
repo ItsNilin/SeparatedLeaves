@@ -43,19 +43,14 @@ modrinth {
     token = System.getenv("MODRINTH_TOKEN")
     projectId = "separated-leaves"
     versionNumber = "${rootProject.mod_version}-fabric-${rootProject.latest_version}"
-    versionName = "${rootProject.mod_version} Fabric ${rootProject.latest_version}"
+    versionName = "${rootProject.mod_version}"
     versionType = "release"
     uploadFile = remapJar
-    gameVersions = ["1.19.3", "1.19.4", "1.20", "1.20.1", "1.20.2", "1.20.3", "1.20.4"]
+    gameVersions = ["1.21", "1.21.1"]
     loaders = ["fabric"]
     dependencies {
         required.project "architectury-api"
         required.project "fabric-api"
-        optional.project "biomesyougo"
-        optional.project "ecologics"
-        optional.project "hex-casting"
-        optional.project "premium-wood"
-        optional.project "regions-unexplored"
     }
     changelog = rootProject.file("CHANGELOG_LATEST.md").text
 
@@ -70,26 +65,16 @@ curseforge {
         changelog = rootProject.file("CHANGELOG_LATEST.md").text
         changelogType = "markdown"
         releaseType = "release"
-        addGameVersion "1.19.3"
-        addGameVersion "1.19.4"
-        addGameVersion "1.20"
-        addGameVersion "1.20.1"
-        addGameVersion "1.20.2"
-        addGameVersion "1.20.3"
-        addGameVersion "1.20.4"
+        addGameVersion "1.21"
+        addGameVersion "1.21.1"
         addGameVersion "Fabric"
 
         relations {
             requiredDependency "architectury-api"
             requiredDependency "fabric-api"
-            optionalDependency "ecologics"
-            optionalDependency "hexcasting"
-            optionalDependency "oh-the-biomes-youll-go-fabric"
-            optionalDependency "premium-wood"
-            optionalDependency "regions-unexplored"
         }
         mainArtifact(remapJar) {
-            displayName = "${rootProject.mod_version} Fabric ${rootProject.latest_version}"
+            displayName = "${rootProject.mod_version}"
         }
         options {
             javaVersionAutoDetect = false

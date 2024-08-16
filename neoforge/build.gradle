@@ -59,19 +59,13 @@ modrinth {
     token = System.getenv("MODRINTH_TOKEN")
     projectId = "separated-leaves"
     versionNumber = "${rootProject.mod_version}-forge-${rootProject.latest_version}"
-    versionName = "${rootProject.mod_version} Forge ${rootProject.latest_version}"
+    versionName = "${rootProject.mod_version}"
     versionType = "release"
     uploadFile = remapJar
-    gameVersions = ["1.19.3", "1.19.4", "1.20", "1.20.1", "1.20.2", "1.20.3", "1.20.4"]
-    loaders = ["forge"]
+    gameVersions = ["1.21", "1.21.1"]
+    loaders = ["neoforge"]
     dependencies {
         required.project "architectury-api"
-        optional.project "biomesyougo"
-        optional.project "ecologics"
-        optional.project "hex-casting"
-        optional.project "premium-wood"
-        optional.project "quark"
-        optional.project "regions-unexplored"
     }
     changelog = rootProject.file("CHANGELOG_LATEST.md").text
 
@@ -86,33 +80,15 @@ curseforge {
         changelog = rootProject.file("CHANGELOG_LATEST.md").text
         changelogType = "markdown"
         releaseType = "release"
-        addGameVersion "1.19.3"
-        addGameVersion "1.19.4"
-        addGameVersion "1.20"
-        addGameVersion "1.20.1"
-        addGameVersion "1.20.2"
-        addGameVersion "1.20.3"
-        addGameVersion "1.20.4"
-        addGameVersion "Forge"
+        addGameVersion "1.21"
+        addGameVersion "1.21.1"
+        addGameVersion "NeoForge"
 
         relations {
             requiredDependency "architectury-api"
-            optionalDependency "atmospheric"
-            optionalDependency "autumnity"
-            optionalDependency "biomes-o-plenty"
-            optionalDependency "ecologics"
-            optionalDependency "environmental"
-            optionalDependency "hexcasting"
-            optionalDependency "malum"
-            optionalDependency "oh-the-biomes-youll-go"
-            optionalDependency "premium-wood"
-            optionalDependency "quark"
-            optionalDependency "regions-unexplored"
-            optionalDependency "upgrade-aquatic"
-            optionalDependency "windsweptmod"
         }
         mainArtifact(remapJar) {
-            displayName = "${rootProject.mod_version} Forge ${rootProject.latest_version}"
+            displayName = "${rootProject.mod_version}"
         }
         options {
             javaVersionAutoDetect = false
