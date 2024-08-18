@@ -40,7 +40,7 @@ dependencies {
 
 modrinth {
     token = System.getenv("MODRINTH_TOKEN")
-    projectId = "separated-leaves"
+    projectId = "separatedleaves"
     versionNumber = "${rootProject.mod_version}-forge-${rootProject.latest_version}"
     versionName = "${rootProject.mod_version} Forge ${rootProject.latest_version}"
     versionType = "release"
